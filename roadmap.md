@@ -10,3 +10,4 @@
 - [x] In-app chat between buyer and seller
 - [x] Seller dashboard: add/edit/delete listings, photo upload, stats, messages, profile
 - [x] Soft Alibaba-style look: orange main theme, rounded corners, soft shadows, light grey page, pill search, white section bar
+- [x] Edge-to-edge layout, bigger text, Aeonik-style font (Satoshi until Aeonik files supplied)
