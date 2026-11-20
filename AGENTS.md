@@ -28,3 +28,10 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application architecture
+- Keep marketplace category configuration in a shared browser-safe module and render separate category URLs through a reusable storefront; this keeps category identities consistent without duplicating layout logic.
+- Fetch public listings through a publishable-key server function and TanStack Query loaders; never use privileged credentials for storefront reads.
+- Use Cloud Auth for identity, owner-scoped listing policies and participant-scoped conversations/messages; all authorization must remain in database policies rather than UI checks.
+- Store seller uploads in the private listing-photos bucket and resolve signed URLs for published listings; workspace policy disallows public buckets.
+- Keep seller management and inbox routes inside the client-authenticated layout; account state is shared once at the root.

@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1795195254276,
+      "tag": "0000_marketplace_accounts_listings_chat",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795195364950,
+      "tag": "0001_marketplace_preview_catalog",
+      "breakpoints": true
+    }
+  ]
+}
